@@ -22,8 +22,6 @@ function handleButtonClick(buttonId, message) {
   })
 }
 
-handleButtonClick('myButton', 'Button clicked!')
-
 /* #2
 
 Задача: Розробка функції відстеження позиції курсору миші
@@ -64,7 +62,7 @@ console.log(trackMousePosition())
 */
 
 function createTestList() {
-  document.body.innerHTML = `
+  document.body.innerHTML += `
   <ul id="testList">
   <li>Item 1</li>
   <li>Item 2</li>
@@ -84,3 +82,5 @@ function setupEventDelegation(selector) {
 }
 
 setupEventDelegation('#testList')
+
+handleButtonClick('myButton', 'Button clicked!')
